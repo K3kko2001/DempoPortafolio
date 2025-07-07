@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Dev – Portfolio Template</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Mru9Y2IY7M0sM+HcRUW2KIiMzFxLr0X58F3RDeo63eFUsVTNff7kwh28ykVfoCENKz7dxyzKk5XxhxL7sRKSWw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Sticky Badge -->
+  <header class="site-header">
+    <a href="#hero" class="logo">Alex Dev</a>
+    <button class="nav-toggle" aria-label="Menu">
+      <span class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </span>
+    </button>
+    <nav class="nav">
+      <a href="#hero">Home</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#about">Chi sono</a>
+      <a href="#services">Servizi</a>
+      <a href="#contact">Contatti</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="section hero hidden">
+    <div class="container">
+      <h1 class="name">Alex <span>Dev</span></h1>
+      <p class="tagline gradient-text">Costruisco esperienze web che parlano da sole</p>
+      <a href="#portfolio" class="btn cta">Esplora il mio lavoro</a>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="section portfolio hidden">
+    <div class="container">
+      <h2 class="section-title">Portfolio</h2>
+      <div class="projects">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?auto=format&fit=crop&w=800&q=80" alt="Project 1" />
+          <div class="project-info">
+            <h3>Progetto Vibrant</h3>
+            <p>Landing page animata per un brand innovativo.</p>
+            <span class="tech">HTML • CSS • GSAP</span>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Project 2" />
+          <div class="project-info">
+            <h3>Dashboard Insight</h3>
+            <p>Web app ad alte prestazioni per analisi dati.</p>
+            <span class="tech">React • Node • Chart.js</span>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&w=800&q=80" alt="Project 3" />
+          <div class="project-info">
+            <h3>Portfolio Animate</h3>
+            <p>Template portfolio con effetti scroll fluidi.</p>
+            <span class="tech">Next.js • Framer Motion</span>
+          </div>
+        </div>
+        <!-- Project 4 -->
+        <div class="project-card">
+          <img src="https://picsum.photos/seed/project4/800/600" alt="Project 4" />
+          <div class="project-info">
+            <h3>eCommerce Flash</h3>
+            <p>Store online ultra veloce e responsive.</p>
+            <span class="tech">SvelteKit • Tailwind</span>
+          </div>
+        </div>
+        <!-- Project 5 -->
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Project 5" />
+          <div class="project-info">
+            <h3>App Mobile Boost</h3>
+            <p>Applicazione mobile cross-platform con UI fluida.</p>
+            <span class="tech">Flutter • Firebase</span>
+          </div>
+        </div>
+        <!-- Project 6 -->
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1481277542470-605612bd2d61?auto=format&fit=crop&w=800&q=80" alt="Project 6" />
+          <div class="project-info">
+            <h3>AI Chatbot</h3>
+            <p>Assistente virtuale con NLP e risposte in tempo reale.</p>
+            <span class="tech">Python • TensorFlow • FastAPI</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about hidden">
+    <div class="container about-content">
+      <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80" alt="Foto di Francesco" class="about-img" />
+      <div class="about-text">
+        <h2 class="section-title">Chi sono</h2>
+        <p>Creativo, dinamico e sempre alla ricerca di nuove sfide. Mi concentro su performance, animazioni fluide e un'attenzione maniacale ai dettagli per trasformare idee in esperienze digitali coinvolgenti.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section services hidden">
+    <div class="container">
+      <h2 class="section-title">Servizi</h2>
+      <div class="service-slider">
+          <div class="service-slide">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80" alt="Frontend" />
+            <div class="slide-caption">
+              <h3>Sviluppo Frontend</h3>
+              <p>Interfacce reattive, accessibili e frizzanti.</p>
+            </div>
+          </div>
+          <div class="service-slide">
+            <img src="https://images.unsplash.com/photo-1556155092-8707de31f9c4?auto=format&fit=crop&w=800&q=80" alt="Backend" />
+            <div class="slide-caption">
+              <h3>Backend</h3>
+              <p>API robuste, scalabili e sicure.</p>
+            </div>
+          </div>
+          <div class="service-slide">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80" alt="Animazioni" />
+            <div class="slide-caption">
+              <h3>Animazioni</h3>
+              <p>Motion design che cattura l’attenzione.</p>
+            </div>
+          </div>
+          <div class="service-slide">
+            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80" alt="Performance" />
+            <div class="slide-caption">
+              <h3>Performance</h3>
+              <p>Siti ultra veloci ottimizzati al millisecondo.</p>
+            </div>
+          </div>
+          <div class="service-slide">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Responsive" />
+            <div class="slide-caption">
+              <h3>Responsive Design</h3>
+              <p>Esperienze perfette su ogni dispositivo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact hidden">
+    <div class="container">
+      <h2 class="section-title">Contatti</h2>
+      <form id="contact-form" class="contact-form">
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Nome" required>
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+          <textarea name="message" placeholder="Messaggio" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn">Invia</button>
+      </form>
+      <div class="social">
+        <a href="#" class="social-link" aria-label="GitHub">GitHub</a>
+        <a href="#" class="social-link" aria-label="LinkedIn">LinkedIn</a>
+        <a href="mailto:example@example.com" class="social-link" aria-label="Email">Email</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer CTA -->
+  <footer class="section footer hidden">
+    <div class="container">
+      <h3>Vuoi un sito così per te?</h3>
+      <p>Questo portfolio è un template demo pensato per freelance, designer e sviluppatori che vogliono fare colpo.</p>
+      <ul class="footer-list">
+        <li>✅ Personalizzabile</li>
+        <li>✅ Animato</li>
+        <li>✅ Ultra veloce</li>
+      </ul>
+      <a href="https://www.francescomaselli.it/social-secret" class="btn footer-cta" target="_blank" rel="noopener">Contattami</a>
+      <p class="copyright">© 2025 Francesco Maselli. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" defer></script>
+  <script src="js/script.js" defer></script>
+</body>
+</html>
