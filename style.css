@@ -154,18 +154,28 @@ body {
 
 /* Desktop Nav Styles */
 @media (min-width: 769px) {
+  .site-header {
+    justify-content: space-between;
+    padding-right: 5rem; /* Increased space on the right */
+  }
+
   .nav-toggle {
     display: none;
   }
 
   .nav {
+    /* Reset mobile panel styles for desktop view */
     position: static;
+    display: flex;
     flex-direction: row;
     height: auto;
     width: auto;
-    background: none;
+    background: transparent;
     backdrop-filter: none;
+    right: auto;
+    transition: none;
     gap: 1.5rem;
+    margin-left: 0; /* Reset margin */
   }
 
   .nav a {
