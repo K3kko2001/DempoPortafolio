@@ -30,8 +30,10 @@ const navLinks = document.querySelectorAll('.nav a');
 navToggle.addEventListener('click', () => {
   nav.classList.toggle('open');
   const icon = navToggle.querySelector('i');
-  icon.classList.toggle('fa-bars');
-  icon.classList.toggle('fa-times');
+  if (icon) {
+    icon.classList.toggle('fa-bars');
+    icon.classList.toggle('fa-times');
+  }
 });
 
 // Close nav when a link is clicked
@@ -40,8 +42,10 @@ navLinks.forEach(link => {
     if (nav.classList.contains('open')) {
       nav.classList.remove('open');
       const icon = navToggle.querySelector('i');
-      icon.classList.add('fa-bars');
-      icon.classList.remove('fa-times');
+      if (icon) {
+        icon.classList.add('fa-bars');
+        icon.classList.remove('fa-times');
+      }
     }
   });
 });
